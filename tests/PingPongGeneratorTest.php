@@ -71,6 +71,18 @@
         //User enters 15
         //input -> 15
         //output -> 1 2 ping 4 pong ping 7 8 ping pong 11 ping 13 14 pingpong
+        function test_generatePingPongArray_fifteen()
+        {
+            //Arrange
+            $test_PingPongGenerator = new PingPongGenerator;
+            $input = 15;
+
+            //Act
+            $result = $test_PingPongGenerator->generatePingPongArray($input);
+
+            //Assert
+            $this->assertEquals(array(1, 2, "Ping", 4, "Pong", "Ping", 7, 8, "Ping", "Pong", 11, "Ping", 13, 14, "PingPong"), $result);
+        }
 
         //User enters 0
         //input -> 0
