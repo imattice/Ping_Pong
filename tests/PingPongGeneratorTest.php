@@ -7,7 +7,7 @@
         //Convert number to string
         //input -> 1
         //output -> "1"
-        function test_generatePingPongArray_one()
+        /*function test_generatePingPongArray_one()
         {
             //Arrange
             $test_PingPongGenerator = new PingPongGenerator;
@@ -17,14 +17,14 @@
             $result = $test_PingPongGenerator->generatePingPongArray($input);
 
             //Assert
-            $this->assertEquals("1", $result);
+            $this->assertEquals(1, $result);
 
-        }
+        }*/
 
         //User enters 2
         //input -> 2
         //output -> 1, 2
-        /*function test_generatePingPongArray_two()
+        function test_generatePingPongArray_two()
         {
             //Arrange
             $test_PingPongGenerator = new PingPongGenerator;
@@ -33,8 +33,8 @@
             $result = $test_PingPongGenerator->generatePingPongArray($input);
 
             //Assert
-            $this->assertEquals("1 2", $result);
-        } */
+            $this->assertEquals(array(/*"1", "2"*/ 1, 2), $result);
+        }
 
         //User enters 3
         //input -> 3

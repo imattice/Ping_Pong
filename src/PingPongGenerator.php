@@ -3,16 +3,13 @@
     {
         function generatePingPongArray($input)
         {
-            $result = strval($input);
-            return $result;
-
-            /*$count = 0;
+            $count = 1;
             $result = array();
-            while($count <= $input) {
-                array_push($result, strval($count));
-                $count++;
+            while ($count <= $input) {
+            array_push($result, /*strval($count)*/ $count);
+                ++$count;
             }
-            return $result;*/
+            return $result;
         }
     }
 ?>
