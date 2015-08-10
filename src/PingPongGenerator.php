@@ -13,7 +13,7 @@
                 } elseif ($count % 5 == 0) {
                     array_push($result, "Pong");
                 } else {
-                    array_push($result, /*strval($count)*/ $count);
+                array_push($result, /*strval($count)*/ $count);
                 }
                 ++$count;
 
