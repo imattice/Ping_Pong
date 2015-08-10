@@ -39,7 +39,18 @@
         //User enters 3
         //input -> 3
         //output -> 1 2 ping
+        function test_generatePingPongArray_three()
+        {
+            //Arrange
+            $test_PingPongGenerator = new PingPongGenerator;
+            $input = 3;
 
+            //Act
+            $result = $test_PingPongGenerator->generatePingPongArray($input);
+
+            //Assert
+            $this->assertEquals(array(1, 2, "Ping"), $result);
+        }
         //User enters 5
         //input -> 5
         //output -> 1 2 ping 4 pong
